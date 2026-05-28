@@ -1,0 +1,31 @@
+{
+  "name": "opencode-plugin-mempalace",
+  "version": "0.1.0",
+  "description": "Auto-save hooks for MemPalace — ports mempal_save_hook.sh + mempal_precompact_hook.sh to opencode",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outfile ./dist/index.js --target node",
+    "prepare": "bun build ./src/index.ts --outfile ./dist/index.js --target node"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.4.6"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.4.6",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "mempalace",
+    "memory"
+  ],
+  "license": "MIT"
+}
